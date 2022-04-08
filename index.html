@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="/home/jessica/Desktop/Web Development/Survey Form/css/styles.css">
+</head>
+
+<body>
+    <div id="main">
+        <div class="outerbox">
+            <div class="title">
+                <h1 id="title">Pixie Bubble Tea Survey Form</h1>
+                <p id="description">Thank you for taking the time to help us improve our service.</p>
+            </div>
+            <form class="survey-form" id="survey-form">
+
+                <label for="name" id="name-label">Name:</label>
+                <br>
+                <input class="input-field" type="name" placeholder="Enter your name" id="name" required>
+                <br><br>
+                <label for="email" id="email-label">Email:</label>
+                <br>
+                <input class="input-field" type="email" placeholder="Enter a valid email" id="email" required>
+                <br><br>
+                <label for="number" id="number-label">Age (optional):</label>
+                <br>
+                <input class="input-field" type="number" placeholder="Enter your age" alt id="number" min="16"
+                    max="100">
+                <br><br><br>
+                <label for="bubble-source" id="bubble-source">How did you know about us?</label>
+                <br>
+                <select id="dropdown" name="bubble-source">
+                    <option disabled selected value> -- select an option -- </option>
+                    <option value="social media">Social Media</option>
+                    <option value="tv ad">TV Advertisement</option>
+                    <option value="magazine">Magazine</option>
+                    <option value="newspaper">Newspaper</option>
+                    <option value="others">Others</option>
+                </select>
+                <br><br>
+                <label for="frequency">
+                    <p>How often do you drink bubble tea?</p>
+                </label>
+                <input type="radio" id="veryOften" name="frequency" value="veryOften"><label for="veryOften">Very
+                    often</label>
+                <input type="radio" id="often" name="frequency" value="often"><label for="often">Often</label>
+                <input type="radio" id="sometimes" name="frequency" value="sometimes"><label
+                    for="sometimes">Sometimes</label>
+                <input type="radio" id="seldom" name="frequency" value="seldom"><label
+                    for="seldom">Seldom</label><br><br><br>
+                <label for="flavor">What is your favorite bubble tea flavor?</label>
+                <br>
+                <select name="flavor" id="flavor">
+                    <option disabled selected value> -- select a flavor -- </option>
+                    <option value="brownsugar">Brown Sugar Milk Tea</option>
+                    <option value="strawberry">Strawberry Milk Tea</option>
+                    <option value="wintermelon">Wintermelon Milk Tea</option>
+                    <option value="matcha">Matcha Latte</option>
+                    <option value="classic">Classic Milk Tea</option>
+                    <option value="taro">Taro Milk Tea</option>
+                    <option value="calamansi">Calamansi Milk Tea</option>
+                </select>
+                <br><br>
+                <label for="snacks">
+                    <p>What snacks would you like to see in our menu? (More than one answer is possible)
+                    </p>
+                </label>
+                <input type="checkbox" id="snack1" name="snack1" value="Waffles">
+                <label for="snack1"> Waffles</label><br>
+                <input type="checkbox" id="snack2" name="snack2" value="Fries">
+                <label for="snack2"> French Fries</label><br>
+                <input type="checkbox" id="snack3" name="snack3" value="Takoyaki">
+                <label for="snack3"> Takoyaki</label><br>
+                <input type="checkbox" id="snack4" name="snack4" value="Nuggets">
+                <label for="snack4">Vegan Nuggets</label><br>
+                <input type="checkbox" id="snack5" name="snack5" value="Chicharon">
+                <label for="snack5">Oyster Mushroom Chicharon</label><br>
+                <input type="checkbox" id="snack6" name="snack6" value="Tofu">
+                <label for="snack6">Tofu Popcorn</label><br><br><br>
+
+                <label for="service">How can we improve our service?</label><br>
+                <textarea class="textarea" name="service" id="service" cols="60" rows="10"
+                    placeholder="Enter your comment here..."></textarea>
+
+
+
+                <br><br>
+                <input type="submit" value="Submit" id="submit">
+
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
